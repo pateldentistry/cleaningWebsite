@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  -->
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri Jun 10 2022 03:37:23 GMT+0000 (Coordinated Universal Time) -->
 <html
   data-wf-domain="cleaningtemplate.webflow.io"
   data-wf-page="61f167b25917d6fe5cbc753c"
@@ -42,7 +42,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link
-      href="https://assets.website-files.com/61f167b25917d67e92bc753b/css/cleaningtemplate.webflow.9b29b6b36.css"
+      href="style.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -125,7 +125,7 @@
                     >
                   </li>
                   <li class="header-nav-list-item left">
-                    <a href="/about" class="header-nav-link w-nav-link"
+                    <a href="#about" class="header-nav-link w-nav-link"
                       >About</a
                     >
                   </li>
@@ -138,7 +138,7 @@
                   </li>
 
                   <li class="header-nav-list-item left">
-                    <a href="/contact" class="header-nav-link w-nav-link"
+                    <a href="#contact" class="header-nav-link w-nav-link"
                       >Contact</a
                     >
                   </li>
@@ -158,7 +158,7 @@
                 <div class="hamburger-menu-bar bottom"></div>
               </div>
               <a
-                href="https://cleaningtemplate.webflow.io/#free-quote"
+                href="#free-quote"
                 class="btn-primary small header-btn-hidde-on-mb w-button"
                 >Get a free quote</a
               >
@@ -364,6 +364,7 @@
       <div class="section large wf-section">
         <div class="container-default w-container">
           <div
+            id="about"
             data-w-id="c23f8b8f-2d8f-1d8f-1a81-109b6b9fa188"
             style="
               -webkit-transform: translate3d(0, 10%, 0) scale3d(1, 1, 1)
@@ -383,7 +384,10 @@
                 Our cleaning services have no comparison
               </h2>
               <p>
-                You won't find a more thorough and professional cleaning service anywhere else, with a range of services tailored to meet your unique needs and a dedication to using only eco-friendly cleaning products.
+                You won't find a more thorough and professional cleaning service
+                anywhere else, with a range of services tailored to meet your
+                unique needs and a dedication to using only eco-friendly
+                cleaning products.
               </p>
             </div>
           </div>
@@ -861,7 +865,7 @@
                 will work with you to create a customized cleaning plan that
                 meets your unique needs.
               </p>
-             
+
               <div class="inner-container _428px">
                 <div
                   class="w-layout-grid grid-3-columns columns-auto mg-bottom-48px"
@@ -1003,7 +1007,7 @@
                         name="Adress"
                         data-name="Adress"
                         placeholder="4140 Pointe Lane, LA"
-                        id="Adress"
+                        id="Address"
                         required=""
                       />
                     </div>
@@ -1059,18 +1063,18 @@
                         class="text-area w-input"
                       ></textarea>
                     </div>
-                    <input
-                      type="submit"
+                    <button
                       value="Submit message"
                       data-wait="Please wait..."
-                      id="w-node-_7f1810ef-d480-fc84-f029-1710ace1b297-5cbc753c"
+                      id=""
+                      onclick="getForm()"
                       class="btn-primary w-button"
-                    />
+                    >Submit</button>
+                
                   </div>
                 </form>
                 <div class="success-message white-message w-form-done">
                   <div class="line-rounded-icon success-message-check top">
-                    
                   </div>
                   <div>
                     Thanks for reaching out. We will get back to you soon.
@@ -1087,7 +1091,7 @@
         </div>
       </div>
       <footer class="footer-wrapper">
-        <div class="container-default w-container">
+        <div class="container-default w-container" id="contact">
           <div class="footer-top">
             <div class="w-layout-grid grid-4-columns footer">
               <div
@@ -1098,11 +1102,10 @@
                   Quality cleaning for your home
                 </div>
                 <p class="mg-bottom-40px">
-                  Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do
-                  eiusmo.
+                  Our top-notch cleaning service provides exceptional quality for your home and office, leaving it spotless and sanitized every time.
                 </p>
                 <div class="w-layout-grid social-media-grid-top">
-                  <a
+                  <!-- <a
                     href="https://facebook.com/"
                     class="social-icon-square w-inline-block"
                     ><div class="social-icon-font"></div></a
@@ -1126,7 +1129,7 @@
                     href="https://youtube.com/"
                     class="social-icon-square w-inline-block"
                     ><div class="social-icon-font"></div></a
-                  >
+                  > -->
                 </div>
               </div>
               <div data-w-id="759d9bce-dffa-02a5-918d-437a9a4f09c9">
@@ -1167,7 +1170,7 @@
                       <div
                         class="line-rounded-icon color-neutral-800 mg-right-8px"
                       >
-                        <strong class="footer-link-icon"></strong>
+                        <strong class="footer-link-icon"></strong>
                       </div>
                       <div>info@a2zcleaners.net</div>
                     </a>
@@ -1206,8 +1209,7 @@
                   >(484) 619 - 3855</a
                 >
                 <p class="mg-bottom-24px">
-                  Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do
-                  eiusmod.
+                  Contact us today for a free estimate and take the first step towards a cleaner and healthier home or workspace.
                 </p>
                 <a
                   href="https://cleaningtemplate.webflow.io/#free-quote"
@@ -1253,6 +1255,7 @@
       src="https://assets.website-files.com/61f167b25917d67e92bc753b/js/webflow.9a1697773.js"
       type="text/javascript"
     ></script>
+    <script src="form.js"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
